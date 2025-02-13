@@ -70,7 +70,7 @@ router.post("/createInvoice", async (req, res) => {
         res.status(201).json({
             message: "Invoice created successfully",
             invoiceId,
-            issuerPdfUrl: `https://invoicepaymentapp.onrender.com/invoices/${invoiceId}.pdf`,
+            issuerPdfUrl: `https://payment-invoice.onrender.com/invoices/${invoiceId}.pdf`,
         });
     } catch (error) {
         console.error("Error occurred during invoice creation:", error);
