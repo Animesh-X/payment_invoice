@@ -21,7 +21,7 @@ if (!fs.existsSync(wasmPath) || !fs.existsSync(zkeyPath) || !fs.existsSync(vKeyP
 }
 
 // Function to generate and verify proof
-export async function generateProof(invoiceID, issuer, payer, amount) {
+export default async function generateProof(invoiceID, issuer, payer, amount) {
     try {
         // Convert inputs to strings (Circom expects field elements in JSON)
         const inputData = {

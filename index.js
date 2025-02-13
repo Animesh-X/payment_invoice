@@ -13,7 +13,7 @@ import path from "path";
 import { fileURLToPath } from 'url';
 import dotenv from "dotenv";
 import Invoices from "./InvoicSchema.js";
-import { generateProof } from "./utils/generateProof.js";
+import generateProof from "./utils/generateproof.js";
 
 dotenv.config();
 
